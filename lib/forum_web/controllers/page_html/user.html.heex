@@ -1,0 +1,10 @@
+<h1>Users page</h1>
+
+<div class="max-w-2xl mx-auto divide-y-2">
+  <%= for user <- @users do %>
+    <div>
+      <h2><%= user.name %></h2>
+      <p>Email: <%= user.email %></p>
+    </div>
+  <% end %>
+</div>
